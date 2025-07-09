@@ -1,0 +1,852 @@
+*{
+
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;     /* For body */
+}
+
+
+body{
+    z-index: -1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(0, 0, 0);
+
+}
+
+.header-main{
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 15px;
+
+}
+.header-main ul{
+    
+    z-index: 1;
+    border: 2px solid;
+    padding: 15px;
+    padding-inline:40px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    position: fixed;
+    color: beige;
+    box-shadow: 0 0 100px rgb(0, 0, 0);
+
+
+    
+}
+
+.header-main li{
+
+    list-style-type: none;
+    margin-inline: 8px;
+    background-color: rgba(0,0, 0,0.10);
+
+}
+.header-main a{
+    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 10px;
+   
+
+    
+}
+
+.header-main a:hover{
+    
+    /* background-color: rgb(62, 59, 55);
+     */
+
+     color: rgb(79, 74, 74);
+
+}
+
+
+.Home{
+
+
+    display: flex;
+    flex-direction: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 100px;
+}
+
+
+.u2{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.u2  a{
+
+
+    overflow: hidden;
+    border: 1px solid;
+    width: 190px;
+    height: 200px;
+    margin: 20px;
+    border-radius:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgb(255, 255, 255); 
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.386);
+
+    
+    
+
+}
+
+.new-box{
+
+    width: 530px;
+    border: 1px solid;
+    height: 200px;
+    margin: 20px;
+    border-radius:15px;
+    box-shadow: 1px 1px 10px rgb(255, 255, 255); 
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.386);
+    box-shadow: 1px 1px 10px rgb(255, 255, 255); 
+
+    
+
+
+
+
+}
+
+.u1{
+
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.UL1{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.UL2{
+
+    display: flex ;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+    
+}
+
+.newdiv{
+
+    display: flex ;
+    flex-direction: column;
+
+} 
+
+.UL11{
+    display: flex;
+    
+}
+.UL11 a{
+
+    border: 1px solid;
+    border-radius: 15px;
+    width: 510px;
+    height: 220px;
+    margin: 20px;
+    display: flex;
+    text-decoration: dotted;
+    overflow: hidden;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.386);
+    box-shadow: 1px 1px 10px rgb(255, 255, 255); 
+
+
+}
+
+.ULL2{
+
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.ULL2 a{
+
+    width: 240px;
+    height: 160px;
+    border: 1px solid;
+    margin: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgb(255, 255, 255); 
+    text-decoration: dotted;
+    overflow: hidden;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.386);
+
+
+}
+.UL2 div1{
+
+    width: 200px;
+    border: 1px solid;
+    border-radius: 15px;
+    height:410px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgb(255, 255, 255); 
+    transition: ease 1s;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+}
+
+.UL2 div1:hover{
+
+    transform: scale(1.05);
+    
+}
+
+.UL2 div1:hover::after{
+
+    transform: scale(1);
+    transition-duration: 1000ms;
+}
+
+
+.UL2 a{
+
+    width: 200px;
+    border: 1px solid;
+    border-radius: 12px;
+    height:410px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgb(255, 255, 255); 
+    text-decoration: dotted;
+    overflow: hidden;
+    cursor:text;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.386);
+
+}
+
+.profile-box{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.profile-box p{
+
+    font-size: 22px;
+    margin: 28px;
+    text-decoration: none;
+    
+}
+
+.name{
+    
+    font-family: "Dancing Script", cursive;
+    color: rgb(255, 82, 82);
+    font-size:xx-large;
+}
+
+
+.profile{
+
+    width: 100px;
+    margin: 38px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px;
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+
+}
+
+.profile:hover{
+    transform: scale(1.2);
+    border-radius: 40px;
+}
+
+
+/* .ima{
+    
+    /* z-index:-1;
+    border: 12px solid;
+    border-radius: px; */
+/* } */ 
+.projects{
+
+    font-family: "Dancing Script", cursive;
+    font-size: 33px;
+    color: azure;
+    padding: 12px ;
+
+}
+.sub-text{
+
+    padding:12px;
+}
+
+.carer{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.enter{
+    width: 60px;
+    background-color:rgb(255, 255, 255,0.75); 
+    color: black;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 120px;
+    border: 2px solid;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    transition: ease 1.2s;
+
+}
+
+.enter:hover{
+
+    width: 100px;
+    border-radius: 15px;
+    transition: ease-in-out 0.9s;
+    margin-left: 55px;
+    border: 2px solid;
+    
+}
+
+.enter:hover::after{
+
+    transition-duration: 2000ms;
+}
+
+.vs{
+    color: rgb(255, 82, 82);
+    
+}
+
+.copybutton{
+
+    background-color: transparent;
+    border: none;
+    cursor:copy;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gmail{
+    
+    margin-top: -16px;
+    display: flex;
+}
+
+.name1{
+
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+    font-weight: 1000;
+    
+}
+
+.left p{
+
+    font-size: 18px;
+}
+
+.resume{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.enter1{
+
+    width: 100px;
+    background-color:rgb(255, 255, 255,0.75); 
+    color: black;
+    height: 45px;
+    border-radius: 12px;
+    margin-top: 10px;
+    border: 2px solid;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    cursor: pointer;
+
+
+}
+
+
+.pro{
+
+    width: 300px;
+    border-radius: 12px;
+    height: 200px;
+    margin-left: 200px;
+    position: relative;
+    top: -45px;
+    box-shadow: 1px 1px 10px rgb(255, 255, 255); 
+    transition: ease 0.9s;
+
+    
+    
+}
+
+.pro:hover{
+
+    transform: scale(1.2);
+
+}
+
+
+
+.new-box{
+
+    overflow: hidden;
+}
+
+
+.enter2{
+
+    width: 100px;
+    background-color:rgb(255, 255, 255,0.75); 
+    color: black;
+    height: 45px;
+    border-radius: 12px;
+    margin-top: 40px;
+    margin-left: 40px ;
+    border: 2px solid;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    cursor: pointer;
+    transition: ease 1s;
+}
+
+.enter2:hover{
+
+    transform: scale(1.2);
+}
+
+
+.img12{
+
+    width: 100px;
+}
+
+
+.enter3{
+
+    width: 100px;
+    background-color:rgb(255, 255, 255,1); 
+    color: black;
+    height: 45px;
+    border-radius: 12px;
+    margin-top: 120px;
+    border: 4px solid;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    cursor: pointer;
+    transition: ease 1s;
+    text-decoration: none;
+    position: absolute;
+}
+
+.enter3:hover{
+
+   border: 5px solid black;
+
+}
+
+.skill{
+
+    overflow: hidden;
+    position: relative;
+
+    
+}
+.img234{
+
+    width: 190px;
+    position: relative;
+    transition: ease 1s;
+}
+
+.img234:hover{
+
+   transform: scale(1.1);
+   
+}
+
+#light{
+
+    background-color: beige;
+}
+
+#drak{
+
+    background-color: red;
+}
+
+
+.profile-page{
+
+
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.gradient-img{
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 0.1;
+    z-index: -1;
+    width: 100%;
+}
+
+.Dbox{
+
+
+
+    pointer-events: none;
+    cursor:not-allowed;
+
+    width: 900px;
+    scroll-padding: 100px;
+    overflow: hidden;
+}
+
+.layer{
+
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    position:absolute;
+    right: 0px;
+    height: 100px;
+    bottom: 185px;
+    /* border: 1px solid; */
+}
+.intro{
+
+    
+    line-height: 1.5re;
+    padding: 10px;
+    margin-left: 120px;
+    font-size: 30px;
+    border: 2px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.386);
+}
+
+
+.App{
+
+    width: 500px;
+    line-height: 40px;
+    
+}
+
+.scroll-btn{
+
+    background-color: transparent;
+    height: 50px;
+    width: 100px;
+    border: none;
+    font-size: large;
+    margin: 20px;
+    color: beige;
+    border: 1px solid;
+    border-radius: 12px;
+   
+}
+
+.Link1{
+
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    justify-content: right;
+    width: 100%;
+    margin: 10px;
+    
+
+
+}
+
+.Link1 a{
+
+    margin-right: 30px;
+
+
+}
+
+@keyframes appear{
+
+    from{
+
+        opacity: 0;
+        scale: 0.5;
+
+    }
+
+    to{
+
+        opacity: 1;
+        scale: 1;
+
+    }
+}
+
+
+.footer{
+
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer button{
+
+    width: 50px;
+    height: 50px;
+    
+    background: transparent;
+    border: none;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.386);
+    border-radius: 50px;
+}
+
+.layer1{
+
+    border: 1px solid;
+    width: 10rem;
+    /* border: none; */
+    /* height: 20px; */
+    top: 80%;
+    position: absolute;
+    right:25%;
+    z-index: 0;
+    border-radius: 12px;
+    box-shadow: 0 0 700px 15px white;
+}
+
+.About-new{
+
+
+  
+  display: grid;
+  grid-template-columns: repeat(1,3fr);
+  gap: 10rem;
+  margin: 150px;
+
+}
+
+.card{
+
+    border: 1px solid;
+    border-radius: 12px ;
+    padding: 20px;
+    height: 200px;
+    background-color: black;
+    box-shadow: 1px 1px 10px rgb(255, 255, 255); 
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.386);
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    z-index: -1;
+
+}
+
+.card .default,
+.card .hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease-in-out
+  
+}
+
+.card .hover {
+  background: #000000;
+  color: white;
+  opacity: 0;
+}
+
+.card:hover .default {
+  opacity: 0;
+}
+.card:hover .hover {
+  opacity: 1;
+}
+
+
+.about-box{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    
+}
+
+.about-left{
+    
+    border: 1px solid ;
+    padding: 12px;
+    margin: 10px;
+    margin-top: -50px;
+    width: 80%;
+    border-radius: 12px;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.386);
+
+
+}
+.about-box h2{
+
+    font-weight: bold;
+}
+
+
+.about-left li{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 0.01px solid; */
+    box-shadow: #000000;
+
+    margin-top: 30px;
+    padding: 20px;
+
+
+}
+
+.right p{
+    color: rgb(255, 2, 2);
+}
+
+.about-right{
+
+    border: 1px solid ;
+    padding: 12px;
+    margin: 10px;
+    margin-top: -50px;
+    width: 110%;
+    height: 250px;
+    border-radius: 12px;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.386);
+
+
+}
+
+.con .left li{
+
+
+    list-style-type: none;
+
+
+}
+
+.con{
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.u2 a{
+
+
+    text-decoration: none;
+    padding: 20px;
+
+    
+}
+
+.input input{
+
+    background-color: transparent;
+
+
+}
+
+.terminal{
+
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding:10px;
+    padding-inline: 100px;
+    border: 1px solid;
+    margin: 200px;
+    width: 70%;
+    height: 200px;
+    align-items: right;
+
+}
