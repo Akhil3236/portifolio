@@ -2,7 +2,6 @@ import profile from '../assets/profile.avif';
 import Img2 from '../assets/Discrod2.jpg';
 import Img3 from '../assets/Linkedin2.jpg';
 import Img1 from '../assets/Github.webp';
-import Img4 from '../assets/GitHub.webp';
 import ImageSlider from '../ImageSlider';
 import { useState,useEffect ,useRef} from 'react';
 import BcgImg from '../assets/profile.png';
@@ -23,7 +22,6 @@ const images=[
   {src:Img1,link:""},
   {src:Img2,link:""},
   {src:Img3,link:""},
-  {src:Img4,link:""},
   
 ];
 
