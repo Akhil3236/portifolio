@@ -5,7 +5,7 @@ import Img1 from '../assets/Github.webp';
 // import Img4 from '..assets/instagram2.png';
 import ImageSlider from '../ImageSlider';
 import { useState,useEffect ,useRef} from 'react';
-import BcgImg from '../assets/profile.png';
+// import BcgImg from '../assets/profile.png';
 import skills from '../assets/skills3.png';
 import { useNavigate } from 'react-router-dom';
 import { createContext } from 'react';
@@ -334,7 +334,7 @@ function Home() {
       <div className='new-box'>
 
         <button className='enter2'  onClick={()=>navigate('/Projects')}>Project's </button>
-        <img src={BcgImg} alt="" className='pro'/>
+        {/* <img src={BcgImg} alt="" className='pro'/> */}
     
       
         
