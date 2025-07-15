@@ -1,7 +1,7 @@
 // import profile from '../assets/profile.avif';
-// import Img2 from '../assets/Discrod2.jpg';
-// import Img3 from '../assets/Linkedin2.jpg';
-// import Img1 from '../assets/Github.webp';
+import Img2 from '../assets/Discrod2.jpg';
+import Img3 from '../assets/Linkedin2.jpg';
+import Img1 from '../assets/Github.webp';
 // import Img4 from '../assets/instagram2.png';
 import ImageSlider from '../ImageSlider';
 import { useState,useEffect ,useRef} from 'react';

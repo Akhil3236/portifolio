@@ -16,6 +16,7 @@ const ImageSlider = ({ images }) => {
     window.open(url, '_blank'); 
   };
 
+  
   return (
     <div style={{ width: '100%', maxWidth: '600px', margin: 'auto' }}>
       <img
