@@ -1,5 +1,5 @@
 import React from 'react'
-import backgorund from "../assets/backgorund.avif"
+import backgorund from "../assets/backgorund.png"
 
 function About() {
 
