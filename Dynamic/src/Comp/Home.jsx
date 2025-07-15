@@ -1,8 +1,8 @@
 // import profile from '../assets/profile.avif';
-import Img2 from '../assets/Discrod2.jpg';
-import Img3 from '../assets/Linkedin2.jpg';
-import Img1 from '../assets/Github.webp';
-// import Img4 from '../assets/instagram2.png';
+// import Img2 from '../assets/Discrod2.jpg';
+// import Img3 from '../assets/Linkedin2.jpg';
+// import Img1 from '../assets/Github.webp';
+// // import Img4 from '../assets/instagram2.png';
 import ImageSlider from '../ImageSlider';
 import { useState,useEffect ,useRef} from 'react';
 import BcgImg from '../assets/profile.png';
@@ -18,14 +18,14 @@ import Spline from '@splinetool/react-spline';
 
 export const ThemeContext=createContext('light');
 
-const images=[
+// const images=[
   
-  {src:Img1,link:""},
-  {src:Img2,link:""},
-  {src:Img3,link:""},
-  {src:Img4,link:""},
+//   {src:Img1,link:""},
+//   {src:Img2,link:""},
+//   {src:Img3,link:""},
+//   {src:Img4,link:""},
   
-];
+// ];
 
 function Home() {
 
@@ -214,7 +214,7 @@ function Home() {
               </div>
               <div className="right">
 
-                <img className='profile' src={profile} alt="img"/>
+                {/* <img className='profile' src={profile} alt="img"/> */}
                 
                   
 
@@ -292,7 +292,7 @@ function Home() {
             
           </a>
           <div1>
-              <ImageSlider images={images}/>
+              {/* <ImageSlider images={images}/> */}
 
           </div1>
 
