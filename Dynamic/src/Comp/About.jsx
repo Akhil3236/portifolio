@@ -3,9 +3,8 @@ import backgorund from "../assets/backgorund.png"
 
 function About() {
 
-
   const intergrade="9.0";
-  const enggrade="7.1";
+  const enggrade="7.3";
   return (
     <>
 
@@ -64,11 +63,11 @@ function About() {
 
               Bachelor of Technology,
               <br />
-              computer science and engineering,
+              computer science and Engineering,
               <br />
-              NIT sringar,
+              NIT Srinagar,
               <br />
-              srinagar
+              Srinagar
 
               <br />
 
@@ -164,16 +163,18 @@ function About() {
 
               <br />
 
-              MERN stack devloper Intern
+              FUll STACK DEVLOPER INTERN
 
               <br />
 
-              contributed in devloping authenication and autherization
+              Developed a user authentication system supporting registration, login, and role-based access for 100+ mock users using
+React.js and Node.js
               <br />
-               system in login page
+               Reduced page reloads and enhanced UI responsiveness by 30% by implementing client-side validation and optimized API
+handling
               <br />
 
-              with proper security techniques
+             Gained hands-on experience in React components, REST APIs, Express routing, and MongoDB integration.
 
               <br />
 
@@ -190,7 +191,8 @@ function About() {
 
 
               <p>
-              dec 2024-feb 2025
+               
+               3Months
 
               </p>
 

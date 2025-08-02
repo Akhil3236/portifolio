@@ -7,11 +7,14 @@ import ImageSlider from '../ImageSlider';
 import { useState,useEffect ,useRef} from 'react';
 // import BcgImg from '../assets/profile.png';
 import skills from '../assets/skills3.png';
-import { useNavigate } from 'react-router-dom';
+import { href, Navigate, useNavigate } from 'react-router-dom';
 import { createContext } from 'react';
 import backgorund from '../assets/backgorund.png';
 import { Typewriter } from 'react-simple-typewriter'
 import Spline from '@splinetool/react-spline';
+
+
+
 
 
 
@@ -28,48 +31,6 @@ const images=[
 ];
 
 function Home() {
-
-  const [history,sethistory]=useState([
-    "Welcome to the My Terminal Ask me anything about Me Here"
-  ]);
-
-  const [command,setcommand]=useState("");
-  const useterminal=useRef(null);
-
-
-  const responses = {
-    "name": "\n Akhil Tuluri",
-    "age": "20",
-    clear: "Welcome to Fake Compiler Terminal!",
-    help: "Try: javac HelloWorld.java, java HelloWorld, clear"
-  };
-
-
-  const newhandledone=()=>{
-
-
-    const userinput=`${command}`;
-    const res=responses[userinput] || `${command} not found !!!!`;
-
-    sethistory(prev=>[...prev,userinput,res]);
-
-    console.log(sethistory);
-    
-    setcommand("");
-
-  }
-
-  const handlekeyDone=(e)=>{
-
-    if(e.key==="Enter"){      
-      newhandledone();
-    }
-  }
-
- useEffect(() => {
-    useterminal.current.scrollTop = useterminal.current.scrollHeight;
-  }, [history]);
-
 
   const handleType = (count) => {
     
@@ -123,6 +84,8 @@ function Home() {
     })
   }
 
+ 
+
   
   return (
     <>
@@ -134,20 +97,21 @@ function Home() {
 
     <div className='profile-page'>
 
+      <div className='tech'> 
+     
+      <div className='intro' data-aos="flip-right">
 
-    <div className='intro' data-aos="flip-right">
-
-          <div className='App'>
+      <div className='App'>
       <h4 style={{ paddingTop: '1rem', margin: 'auto 0', fontWeight: 'normal' }}>
-        Hi ,It's 👋<b className='name'> Akhil Tuluri </b><br />
-        A {' '}
+        Hi 👋 ,It's <b className='name'> Akhil Tuluri </b><br />
+         <b> {' '}  </b> 
         <span style={{ color: 'red', fontWeight: 'bold' }}>
           {/* Style will be inherited from the parent element */}
           <Typewriter
-            words={['Full Stack Developer ', 'Student at Nit srinagar ','Coder ',"Editor "]}
+            words={['A Full Stack Developer ', ' An UnderGraduate at Nit Srinagar ','A Versatile Developer']}
             loop={10}
             cursor
-            cursorStyle='_'
+            cursorStyle='| -'
             typeSpeed={100}
             deleteSpeed={100}
             delaySpeed={1000}
@@ -163,12 +127,24 @@ function Home() {
      <div className="scroll">
 
         <button className='scroll-btn' onClick={scrollDown}>About me</button>
+
+        <a href="https://drive.google.com/file/d/1WP0Nnm23chuFyElSrP3taxS9q4D9pZDX/view?usp=sharing"
+        target='_blank'
+
+        >
+
+
+        <button className='scroll-btn1' title='check out my Latest Updated Resume'>
+          Resume 
+       </button>
+        </a>
+
       </div>
       
       <div className='Link1'>
 
-      <a href="">GitHub</a>
-      <a href="">LinkedIn</a>
+      <a href="https://github.com/Akhil3236" target='_blank'>GitHub</a>
+      <a href="https://www.linkedin.com/in/akhil-tuluri-28973224a/" target='_blank'>LinkedIn</a>
 
       </div>
 
@@ -176,6 +152,86 @@ function Home() {
 
 
     </div>
+      
+ <div class="tech-stack-marquee">
+  <div class="track">
+    <span >
+     <i class="devicon-javascript-plain colored"></i>
+    </span>
+    <span>
+    <i class="devicon-react-original-wordmark colored"></i>
+    </span>
+    <span>
+    <i class="devicon-nodejs-plain-wordmark colored"></i>
+    </span>
+    <span>
+    <i class="devicon-mongodb-plain-wordmark colored"></i>
+    </span>
+    <span>
+    <i class="devicon-java-plain-wordmark colored"></i>           
+    </span>
+    <span>
+    <i class="devicon-git-plain-wordmark colored"></i>
+    </span>
+    <span>
+    <i class="devicon-express-original-wordmark"></i>
+    </span>
+    <span>
+    <i class="devicon-socketio-original"></i>
+    </span>
+    <span>
+     <i class="devicon-github-original"></i>
+    </span>
+    <span>
+      <i class="devicon-cplusplus-plain colored"></i>
+    </span>
+    <span>
+      <i class="devicon-python-plain-wordmark colored"></i>
+    </span>
+    <span>
+      <i class="devicon-tailwindcss-original colored"></i>
+    </span>
+    <span>
+      <i class="devicon-bootstrap-plain-wordmark colored"></i>
+    </span>
+    <span>
+      <i class="devicon-figma-plain"></i>
+    </span>
+    <span>
+      <i class="devicon-blender-original-wordmark colored"></i>
+    </span>
+    <span>
+      <i class="devicon-vercel-original-wordmark"></i>
+    </span>
+    <span>
+      <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+    </span>
+    <span>
+      <i class="devicon-postman-plain colored"></i>
+    </span>
+    <span>
+      <i class="devicon-npm-original-wordmark"></i>
+    </span>
+    <span>
+      <i class="devicon-css3-plain-wordmark"></i>
+    </span>
+    <span>
+      <i class="devicon-html5-plain-wordmark colored"></i>
+    </span>
+    <span>
+      <i class="devicon-azuresqldatabase-plain colored"></i>
+
+    </span>
+    <span>
+
+      <i class="devicon-jest-plain colored"></i>
+
+    </span>
+  
+  </div>
+</div>
+      
+     </div>
 
     <div className="Dbox">
 
@@ -183,13 +239,12 @@ function Home() {
     <Spline className='DBOX' scene="https://prod.spline.design/HBfB8WY9R7F2KiQd/scene.splinecode" />
     <div className='layer'>
 
-
+    </div>   
     </div>
-        
+     
     </div>
 
-
-    </div>
+    
     <div className="Home">
       <div className="u1">
         <div className="UL1">
@@ -233,9 +288,11 @@ function Home() {
 
                Check Out My Resume,
 
-               <button className='enter1' >Check Out</button>
-            
+               
+               <button className='enter1' onClick={Navigate("/Home")} >
 
+                Check
+               </button>
 
             </a>
             <a href="">
@@ -317,7 +374,7 @@ function Home() {
 
        <h1 className='name1'>
 
-        certificates:
+        Certificates:
 
        </h1>
         <p> 
@@ -334,7 +391,12 @@ function Home() {
       <div className='new-box'>
 
         <button className='enter2'  onClick={()=>navigate('/Projects')}>Project's </button>
-        {/* <img src={BcgImg} alt="" className='pro'/> */}
+        
+        <p>
+          
+          Dive into the cool things I’ve built — from metaverse apps to Chrome extensions. Every project is hands-on, hosted, and built from scratch.
+
+        </p>
     
       
         
@@ -344,32 +406,6 @@ function Home() {
     </div>
 
     </div>
-
-
-
-        <div className="terminal" ref={useterminal}>
-
-        {history.map((line,index)=>(
-          <div key={index} className="output">
-              {line}
-
-          </div>
-        ))}
-            <div className="input">
-
-              <span> &gt; </span>
-              <input 
-              type="text" 
-              value={command}
-              onChange={(e)=>setcommand(e.target.value)}
-              onKeyDown={handlekeyDone}
-              autoFocus
-              />
-
-
-            </div>
-
-        </div>
     </>
   )
 
