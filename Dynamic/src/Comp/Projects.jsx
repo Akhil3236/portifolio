@@ -1,10 +1,19 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import backgorund from '../assets/backgorund.png';
 import Metameet from '../assets/Metameet.png'
 import YoutubeProject from '../assets/YoutubeProject.png'
+import WeatherProject from '../assets/WeatherProject.png'
 
 
 function Projects() {
+  const nav=useNavigate();
+
+  const userpage=()=>{
+
+    nav("/Home");
+
+  }
   return (
     <>
     
@@ -70,7 +79,7 @@ function Projects() {
           </div>
           <div className="project_card">
 
-          {/* <div className='cnter'> */}
+         
 
             <div className='projectImage'>
 
@@ -78,7 +87,6 @@ function Projects() {
 
             </div>
 
-          {/* </div> */}
 
             <h2>
              
@@ -123,16 +131,65 @@ function Projects() {
             </div>
 
           </div>
+          <div className="project_card">
+
+                  <h1>Appliaction not found !</h1>
+
+                  <p><a href="">Contact</a></p>
+          </div>
+          <div className="project_card">
+
+
+                 <div className='projectImage'>
+
+              <img src={WeatherProject} alt="Weater Api" />
+
+            </div>
+
+
+            <h2>
+             
+            Weather-Now
+
+            </h2>
+            <p>
+
+            WeatherNow is a simple web app that fetches and displays real-time weather data using a public weather API based on user input.
+
+            </p>
+
+            <div className='tech'>
+
+                 <div className="framework">
+                   HTML
+                 </div>
+                  <div className="framework">
+                   CSS
+                 </div>
+                  <div className="framework">
+                  JavaScript
+                 </div>
+                  <div className="framework">
+                  API
+                 </div>
+                 
+                 
+                  
+            </div>
+
+            <div className='projectbutton'>
+
+              <a href="https://github.com/Akhil3236/weather-app/tree/main" target='_blank'>Code<span><i class="devicon-github-original"></i></span></a>
+              <a href="https://akhil3236.github.io/weather-app/"  target="_blank"
+              className='live2'>Live Demo</a>
+            </div>
+
+
+          </div>
           {/* <div className="project_card">
 
-          </div>
-          <div className="project_card">
-
-          </div>
-          <div className="project_card">
-
-          </div>
-          <div className="project_card">
+          </div> */}
+          {/* <div className="project_card">
 
           </div> */}
      </div>
