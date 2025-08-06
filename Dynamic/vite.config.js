@@ -7,5 +7,5 @@ export default defineConfig({
   build: {},
   server: {},
   preview: {},
-  base: "/",
+  base: "./",
 })
