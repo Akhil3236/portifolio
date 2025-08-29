@@ -1,7 +1,4 @@
 import { createRoot } from 'react-dom/client';
-
-
-
 import './App.css'
 
 
@@ -9,9 +6,7 @@ import './App.css'
 function App() {
   return (
     <>
-     
-      
-
+    
     </>
   )
 }

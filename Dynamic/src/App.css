@@ -1197,3 +1197,36 @@ body{
 
     color: red;
 } 
+
+.skills-page {
+  padding: 2rem;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.skill-category {
+  min-width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  background: #f9f9f9;
+}
+
+.skill-category h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.skill-item {
+  list-style: none;
+  padding: 4px 0;
+  color: #444;
+}
