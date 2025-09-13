@@ -23,9 +23,9 @@ function Projects() {
 
       <div className="project-header">
 
-          <h1>Featured Projects </h1>
+          <h1>Featured Projects</h1>
           <div className='highlighter'></div>
-          <p>A showcase of my recent work, featuring modern web applications built with cutting-edge technologies.</p>
+          <p>A curated collection of my most impactful projects, showcasing innovative solutions built with modern technologies and creative problem-solving approaches.</p>
 
       </div>
 
@@ -46,7 +46,7 @@ function Projects() {
 
             </h2>
             <p>
-              MetaMeet is a real-time 3D metaverse platform enabling users to join virtual rooms, interact via avatars, and collaborate through immersive experiences.
+              MetaMeet is an innovative real-time 3D metaverse platform that revolutionizes virtual collaboration. Users can create personalized avatars, join immersive virtual rooms, and engage in seamless real-time interactions, making remote collaboration more engaging and productive.
             </p>
 
             <div className='tech'>
@@ -95,7 +95,7 @@ function Projects() {
             </h2>
             <p>
 
-             YouTube Summarizer is a Chrome extension that extracts video transcripts and generates concise, AI-powered summaries for quick understanding.
+             YouTube Summarizer is an intelligent Chrome extension that revolutionizes content consumption. By extracting video transcripts and generating AI-powered summaries, it helps users quickly understand key points without watching entire videos, saving time while maintaining comprehension.
 
             </p>
 
@@ -133,9 +133,13 @@ function Projects() {
           </div>
           <div className="project_card">
 
-                  <h1>Appliaction not found !</h1>
+                  <h1>More Projects Coming Soon!</h1>
 
-                  <p><a href="">Contact</a></p>
+                  <p>I'm constantly working on new and exciting projects. Stay tuned for more innovative solutions and creative applications!</p>
+                  
+                  <div className='projectbutton'>
+                    <a href="mailto:akhiltuluri123@gmail.com">Contact Me</a>
+                  </div>
           </div>
           <div className="project_card">
 
@@ -154,7 +158,7 @@ function Projects() {
             </h2>
             <p>
 
-            WeatherNow is a simple web app that fetches and displays real-time weather data using a public weather API based on user input.
+            WeatherNow is a clean and intuitive web application that provides accurate, real-time weather information. Built with modern web technologies, it delivers comprehensive weather data with an elegant user interface, making it easy for users to stay informed about current conditions and forecasts.
 
             </p>
 

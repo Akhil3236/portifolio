@@ -27,20 +27,20 @@ function About() {
 
 
 
-      <p> I’m an enthusiastic Laravel developer with experience, keen to leverage my robust knowledge in Laravel and related technologies to contribute significantly continuously expanding my expertise.</p>
+      <p> I'm an enthusiastic Full Stack Developer with expertise in React, Node.js, and modern web technologies. I'm passionate about creating innovative solutions and continuously expanding my technical knowledge to contribute meaningfully to the tech community.</p>
 
 
-      <p> I love solving problems with code, building full-stack Laravel apps, and exploring new tools and frameworks. Let's build something amazing!
+      <p> I love solving complex problems through elegant code, building scalable full-stack applications, and exploring cutting-edge technologies. Let's collaborate and create something extraordinary together!
   </p>
      </div>
       <div class="hover"><a href="">image-2</a>
 
 
 
-    <p> I’m an enthusiastic Laravel developer with experience, keen to leverage my robust knowledge in Laravel and related technologies to contribute significantly continuously expanding my expertise.</p>
+    <p> I'm an enthusiastic Full Stack Developer with expertise in React, Node.js, and modern web technologies. I'm passionate about creating innovative solutions and continuously expanding my technical knowledge to contribute meaningfully to the tech community.</p>
 
 
-      <p> I love solving problems with code, building full-stack Laravel apps, and exploring new tools and frameworks. Let's build something amazing!
+      <p> I love solving complex problems through elegant code, building scalable full-stack applications, and exploring cutting-edge technologies. Let's collaborate and create something extraordinary together!
   </p>
 
     </div>
@@ -147,7 +147,7 @@ function About() {
      <div className="about-right">
 
 
-        <h2>Work Experince:</h2>
+        <h2>Work Experience:</h2>
 
 
         <div className="con">
@@ -159,22 +159,19 @@ function About() {
 
               <li>
 
-              Ardent PVT limted
+              Ardent Pvt Limited
 
               <br />
 
-              FUll STACK DEVLOPER INTERN
+              Full Stack Developer Intern
 
               <br />
 
-              Developed a user authentication system supporting registration, login, and role-based access for 100+ mock users using
-React.js and Node.js
+              • Developed a comprehensive user authentication system with registration, login, and role-based access control for 100+ users using React.js and Node.js
               <br />
-               Reduced page reloads and enhanced UI responsiveness by 30% by implementing client-side validation and optimized API
-handling
+              • Optimized application performance by reducing page reloads and enhancing UI responsiveness by 30% through client-side validation and efficient API handling
               <br />
-
-             Gained hands-on experience in React components, REST APIs, Express routing, and MongoDB integration.
+              • Gained extensive hands-on experience in React components, REST APIs, Express.js routing, and MongoDB integration
 
               <br />
 
