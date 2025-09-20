@@ -4,6 +4,7 @@ import backgorund from '../assets/backgorund.png';
 import Metameet from '../assets/Metameet.png'
 import YoutubeProject from '../assets/YoutubeProject.png'
 import WeatherProject from '../assets/WeatherProject.png'
+import Twitter from '../assets/twee.png'
 
 
 function Projects() {
@@ -133,6 +134,53 @@ function Projects() {
           </div>
           <div className="project_card">
 
+
+                 <div className='projectImage'>
+
+              <img src={Twitter} alt="Weater Api" />
+
+            </div>
+
+
+            <h2>
+             
+            Tweet-Bot
+
+            </h2>
+
+            <br />
+            <br />
+            <p>
+
+            An automated Twitter bot that fetches the latest Technology News from NewsAPI and tweets them directly using the Twitter API v2.
+            The bot is scheduled to run every day at 8 AM and posts trending news articles.
+
+            </p>
+
+            <div className='tech'>
+
+                 <div className="framework">
+                   Nodejs
+                 </div>
+                  <div className="framework">
+                   API
+                 </div>
+                  <div className="framework">
+                  Twitter account 
+                 </div>            
+            </div>
+
+            <div className='projectbutton'>
+
+              <a href="https://github.com/Akhil3236/tweet-bot/tree/main#features" target='_blank'>Code<span><i class="devicon-github-original"></i></span></a>
+              <a href="https://x.com/TuluriYt"  target="_blank"
+              className='live2'>Live Demo</a>
+            </div>
+
+
+          </div>
+          <div className="project_card">
+
                   <h1>More Projects Coming Soon!</h1>
 
                   <p>I'm constantly working on new and exciting projects. Stay tuned for more innovative solutions and creative applications!</p>
@@ -190,12 +238,7 @@ function Projects() {
 
 
           </div>
-          {/* <div className="project_card">
-
-          </div> */}
-          {/* <div className="project_card">
-
-          </div> */}
+         
      </div>
 
 

@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter ,createRoutesFromElements, Route, RouterProvider}  from 'react-router-dom'
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 
 import './index.css'
 import App from './App.jsx'
@@ -12,21 +12,22 @@ import About from './Comp/About.jsx'
 import Contact from './Comp/Conatct.jsx'
 
 
-const router=createBrowserRouter(
+const router = createBrowserRouter(
 
   createRoutesFromElements(
 
     <>
 
-    <Route path='/' element={<Layout/>}>
-    <Route path='home' element={<Home/>}/>
-    <Route path='Projects' element={<Projects/>}/>
-    <Route path='Skills' element={<Skills/>}/>
-    <Route path='About' element={<About/>}/>
-    <Route path='Contact' element={<Contact/>}/>
-    
-    </Route>
-    
+      <Route path='/' element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path='home' element={<Home />} />
+        <Route path='Projects' element={<Projects />} />
+        <Route path='Skills' element={<Skills />} />
+        <Route path='About' element={<About />} />
+        <Route path='Contact' element={<Contact />} />
+
+      </Route>
+
     </>
   )
 )
