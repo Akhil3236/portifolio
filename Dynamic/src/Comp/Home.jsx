@@ -141,7 +141,7 @@ function Home() {
 
                 <button className='scroll-btn' onClick={scrollDown}>About me</button>
 
-                <a href="https://drive.google.com/file/d/1nq802B0QrXmKer4LFF9JdF9yf4V7SUqF/view?usp=sharing"
+                <a href="https://drive.google.com/file/d/1xUU1MB4vD_t_dPlSU03X9OcIgI5rg8VV/view?usp=sharing"
                   target='_blank'
 
                 >
