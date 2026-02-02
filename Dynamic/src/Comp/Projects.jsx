@@ -6,7 +6,7 @@ import YoutubeProject from '../assets/YoutubeProject.png'
 import WeatherProject from '../assets/WeatherProject.png'
 import Twitter from '../assets/twee.png'
 import LDVProject from '../assets/LDV.png'
-import emi from '../assets/emi.png'
+import emi from '../assets/Emi.png'
 import chatbot from '../assets/cahtbot.png'
 
 
