@@ -5,26 +5,25 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import './index.css'
 import App from './App.jsx'
 import Layout from './Layout.jsx'
+import Intro from './Comp/Intro.jsx'
 import Home from './Comp/Home.jsx'
 import Projects from './Comp/Projects.jsx'
 import Skills from './Comp/Skills.jsx'
 import About from './Comp/About.jsx'
 import Contact from './Comp/Conatct.jsx'
-
+import Resume from './Comp/Resume.jsx'
 
 const router = createBrowserRouter(
-
   createRoutesFromElements(
-
     <>
-
       <Route path='/' element={<Layout />}>
-        <Route index element={<Home />} />
+        <Route index element={<Intro />} />
         <Route path='home' element={<Home />} />
         <Route path='Projects' element={<Projects />} />
         <Route path='Skills' element={<Skills />} />
         <Route path='About' element={<About />} />
         <Route path='Contact' element={<Contact />} />
+        <Route path='Resume' element={<Resume />} />
 
       </Route>
 

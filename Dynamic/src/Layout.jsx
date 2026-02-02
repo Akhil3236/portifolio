@@ -2,6 +2,7 @@ import React, { use, useState } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import Header from './Comp/Header'
 import Footer from './Comp/Footer'
+import MouseEffects from './Comp/MouseEffects'
 
 
 
@@ -12,11 +13,7 @@ function Layout() {
 
   return (
     <div>
-      {isHomePage && (
-        <div className="name-display">
-          <h1>Akhil Tuluri</h1>
-        </div>
-      )}
+      <MouseEffects />
       <Header />
       <Outlet />
       <Footer />

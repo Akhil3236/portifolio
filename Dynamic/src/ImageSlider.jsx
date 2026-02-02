@@ -13,12 +13,12 @@ const ImageSlider = ({ images }) => {
   }, [images.length]);
 
   const handleClick = (url) => {
-    window.open(url, '_blank'); 
+    window.open(url, '_blank');
   };
 
-  
+
   return (
-    <div style={{ width: '100%', maxWidth: '600px', margin: 'auto' }}>
+    <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <img
         src={images[index].src}
         alt={`Slide ${index}`}
@@ -26,10 +26,9 @@ const ImageSlider = ({ images }) => {
         style={{
 
           width: '100%',
-          height: '410px',
-          borderRadius: '12px',
-          objectFit:'cover',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
+          height: '100%',
+          borderRadius: '16px',
+          objectFit: 'fill',
           cursor: 'pointer',
         }}
       />

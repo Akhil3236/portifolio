@@ -13,6 +13,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@calcom/embed-react": "^1.5.3",
     "@emailjs/browser": "^4.4.1",
     "@react-google-maps/api": "^2.20.6",
     "@splinetool/react-spline": "^4.0.0",

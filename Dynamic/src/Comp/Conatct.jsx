@@ -1,8 +1,17 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import { getCalApi } from "@calcom/embed-react";
+import "../App.css";
 
-const Conatact = () => {
+const Contact = () => {
   const form = useRef();
+
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({ "namespace": "15min" });
+      cal("ui", { "styles": { "branding": { "brandColor": "#ff5252" } }, "hideEventTypeDetails": false, "layout": "month_view" });
+    })();
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -28,78 +37,72 @@ const Conatact = () => {
   };
 
   return (
+    <div className="contact-page">
+      <div className="contact-bg-text">CONTACT</div>
+      <div className="contact-container">
 
-    <div className="contactpage">
+        {/* Left Side: Info & Calendar */}
+        <div className="contact-info" data-aos="fade-right">
+          <h1>Let's Connect</h1>
+          <p className="contact-desc">
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+          </p>
 
-      <div className="contactinto">
-
-        <h1>Let's Work Together</h1>
-
-        <p>
-          Ready to bring your innovative ideas to life? I'm passionate about collaborating on exciting projects and working with creative individuals who share my enthusiasm for technology and innovation.
-        </p>
-
-      </div>
-
-
-      <form ref={form} onSubmit={sendEmail} className="DetailsForm">
-
-
-        <h2>Send a Message</h2>
-
-        <p>Fill out the form below and I'll get back to you as soon as possible.</p>
-
-        <label htmlFor="name">
-          Name <br />
-          <input type="text" name="name" placeholder="Your Name" required className="data" />
-        </label>
-
-        <label htmlFor="email" >
-          Email <br />
-          <input type="email" name="email" placeholder="Your Email" required className="data" />
-        </label>
-
-        <label htmlFor="message">
-          Message
-          <br />
-          <textarea name="message" placeholder="Enter Your Message" required className="data" />
-        </label>
-
-
-        <button type="submit" >
-          Send
-        </button>
-      </form>
-
-
-      <div className="basicDeatils">
-
-        <h2>Get In Touch</h2>
-        <p>Prefer to reach out directly? Here's how you can connect with me:</p>
-
-        <div>
-
-          <div className="block_details">
-
-            <p>akhiltuluri123@gmail.com</p>
-
-
-          </div>
-          <div className="block_details">
-
-            <p>+91 9666440579</p>
+          <div className="cal-section" style={{ marginTop: '0', marginBottom: '3rem', borderTop: 'none', padding: '0' }}>
+            <h3>Schedule a Call</h3>
+            <p>Pick a time that works for you.</p>
+            <button
+              data-cal-namespace="15min"
+              data-cal-link="akhiltuluri"
+              data-cal-config='{"layout":"month_view"}'
+              className="cal-btn"
+            >
+              <span className="cal-icon"></span> Book a Meeting
+            </button>
           </div>
 
-          <div className="block_details">
-
-            <p>Current Location: NIT Srinagar, Jammu and Kashmir</p>
+          <div className="info-items">
+            <div className="info-item">
+              <span className="icon">📧</span>
+              <span>akhiltuluri123@gmail.com</span>
+            </div>
+            <div className="info-item">
+              <span className="icon">📞</span>
+              <span>+91 9666440579</span>
+            </div>
+            <div className="info-item">
+              <span className="icon">📍</span>
+              <span>NIT Srinagar, Jammu and Kashmir</span>
+            </div>
           </div>
+        </div>
+
+        {/* Right Side: Form */}
+        <div className="contact-form-wrapper" data-aos="fade-left">
+          <form ref={form} onSubmit={sendEmail} className="contact-form">
+            <h2>Send a Message</h2>
+
+            <div className="form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+
+            <div className="form-group">
+              <input type="email" name="email" placeholder="Your Email" required />
+            </div>
+
+            <div className="form-group">
+              <textarea name="message" placeholder="Your Message" required rows="5"></textarea>
+            </div>
+
+            <button type="submit" className="submit-btn">
+              Send Message
+            </button>
+          </form>
         </div>
 
       </div>
     </div>
-
   );
 };
 
-export default Conatact;
+export default Contact;
