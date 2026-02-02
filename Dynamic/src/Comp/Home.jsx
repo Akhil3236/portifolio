@@ -11,6 +11,8 @@ import backgorund from '../assets/backgorund.png';
 import Img1 from '../assets/Github.webp';
 import Img2 from '../assets/Discrod2.jpg';
 import Img3 from '../assets/Linkedin2.jpg';
+import { SiLeetcode, SiGithub } from 'react-icons/si';
+
 
 // Components
 import ImageSlider from '../ImageSlider';
@@ -169,7 +171,7 @@ function Home() {
             </div>
 
             <a href="/Resume" className="text-btn">View Resume →</a>
-        
+
           </div>
 
           {/* 3. Contact Card */}
@@ -276,6 +278,110 @@ function Home() {
           </div>
 
         </section>
+
+
+        {/* --- LEETCODE ACTIVITY SECTION --- */}
+        <section className="leetcode-section">
+          <div className="section-header-centered animate-slide-up">
+            <h2 className="section-title">Consistency <span className="highlight">Tracker</span></h2>
+            <p className="section-subtitle">A visual representation of my daily problem-solving journey on LeetCode.</p>
+          </div>
+
+          <div className="leetcode-consistency-section animate-slide-up delay-200">
+            <div className="leetcode-card glass-effect">
+              <div className="leetcode-card-bg"></div>
+              <div className="leetcode-content">
+                <div className="leetcode-heatmap-container">
+                  <div className="browser-top-bar">
+                    <div className="browser-dots">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div className="browser-address">leetcode.com/akhiltuluri</div>
+                  </div>
+                  <div className="heatmap-wrapper">
+                    <img
+                      src="https://leetcard.jacoblin.cool/akhiltuluri?theme=dark&font=Baloo&ext=heatmap"
+                      alt="LeetCode Activity Heatmap"
+                      className="leetcode-heatmap-img"
+                      loading="lazy"
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
+                </div>
+
+                <div className="leetcode-footer">
+                  <a
+                    href="https://leetcode.com/u/akhiltuluri/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="leetcode-btn"
+                  >
+                    <SiLeetcode size={20} />
+                    <span>LeetCode Profile</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/Akhil3236"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="leetcode-btn"
+                  >
+                    <SiGithub size={20} />
+                    <span>GitHub Solutions</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        {/* --- GITHUB ACTIVITY SECTION --- */}
+        <section className="github-section">
+          <div className="section-header-centered animate-slide-up">
+            <h2 className="section-title">Open Source <span className="highlight">Contributions</span></h2>
+            <p className="section-subtitle">A look into my GitHub activity and contributions to the developer community.</p>
+          </div>
+
+          <div className="github-activity-grid animate-slide-up delay-200">
+            {/* Main Stats Card */}
+            <div className="github-main-card glass-effect">
+
+              <div className="github-graph-container">
+                <div className="browser-top-bar">
+                  <div className="browser-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div className="browser-address">github.com/akhil3236/activity</div>
+                </div>
+                <div className="graph-wrapper">
+                  <img
+                    src="https://github-readme-activity-graph.vercel.app/graph?username=akhil3236&theme=github-dark&bg_color=00000000&hide_border=true&color=ff5252"
+                    alt="GitHub Activity Graph"
+                    className="github-activity-img"
+                  />
+                </div>
+              </div>
+
+              <div className="github-footer">
+                <a
+                  href="https://github.com/Akhil3236"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="leetcode-btn"
+                >
+                  <SiGithub size={20} />
+                  <span>Visit GitHub Profile</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
 
       </div>
     </>

@@ -4465,6 +4465,7 @@ h6,
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
+
 /* ===== RESUME PAGE STYLES ===== */
 
 .resume-container {
@@ -4645,9 +4646,12 @@ h6,
 
 /* Pulse animation to draw attention */
 @keyframes pulse-glow {
-    0%, 100% {
+
+    0%,
+    100% {
         box-shadow: 0 4px 15px rgba(255, 82, 82, 0.4);
     }
+
     50% {
         box-shadow: 0 4px 25px rgba(255, 82, 82, 0.8);
     }
@@ -4659,15 +4663,21 @@ h6,
 
 /* Click Me Animation for Resume Link */
 @keyframes click-me-bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
-    10%, 30% {
+
+    10%,
+    30% {
         transform: translateY(-4px);
     }
+
     20% {
         transform: translateY(-2px);
     }
+
     40% {
         transform: translateY(0);
     }
@@ -4687,16 +4697,20 @@ h6,
     0% {
         background-position: -200% center;
     }
+
     100% {
         background-position: 200% center;
     }
 }
 
 @keyframes setup-pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         box-shadow: 0 4px 15px rgba(255, 82, 82, 0.4);
         transform: scale(1);
     }
+
     50% {
         box-shadow: 0 4px 25px rgba(255, 82, 82, 0.8), 0 0 30px rgba(255, 82, 82, 0.4);
         transform: scale(1.05);
@@ -4704,14 +4718,12 @@ h6,
 }
 
 .resume-highlight {
-    background: linear-gradient(
-        90deg,
-        #ff5252 0%,
-        #ff1744 25%,
-        #ffffff 50%,
-        #ff1744 75%,
-        #ff5252 100%
-    ) !important;
+    background: linear-gradient(90deg,
+            #ff5252 0%,
+            #ff1744 25%,
+            #ffffff 50%,
+            #ff1744 75%,
+            #ff5252 100%) !important;
     background-size: 200% 100% !important;
     animation: setup-shimmer 3s linear infinite, setup-pulse 2s ease-in-out infinite !important;
     position: relative;
@@ -4748,14 +4760,12 @@ h6,
 
 /* Resume Highlight - Mild White/Gray Theme */
 .resume-highlight {
-    background: linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 0.15) 0%,
-        rgba(255, 255, 255, 0.25) 25%,
-        rgba(255, 255, 255, 0.35) 50%,
-        rgba(255, 255, 255, 0.25) 75%,
-        rgba(255, 255, 255, 0.15) 100%
-    ) !important;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0.15) 0%,
+            rgba(255, 255, 255, 0.25) 25%,
+            rgba(255, 255, 255, 0.35) 50%,
+            rgba(255, 255, 255, 0.25) 75%,
+            rgba(255, 255, 255, 0.15) 100%) !important;
     background-size: 200% 100% !important;
     color: white !important;
     padding: 8px 20px !important;
@@ -4777,6 +4787,7 @@ h6,
     0% {
         background-position: -200% center;
     }
+
     100% {
         background-position: 200% center;
     }
@@ -4784,10 +4795,13 @@ h6,
 
 /* White theme pulse */
 @keyframes setup-pulse-white {
-    0%, 100% {
+
+    0%,
+    100% {
         box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
         transform: scale(1);
     }
+
     50% {
         box-shadow: 0 4px 25px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.2);
         transform: scale(1.05);
@@ -4839,10 +4853,13 @@ h6,
 
 /* Bouncing arrow animation */
 @keyframes arrow-bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(-50%) translateX(0);
         opacity: 0.8;
     }
+
     50% {
         transform: translateY(-50%) translateX(5px);
         opacity: 1;
@@ -4907,6 +4924,7 @@ h6,
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
+
     /* Show hamburger on mobile */
     .hamburger {
         display: flex;
@@ -4969,15 +4987,18 @@ h6,
         border-radius: 12px;
         border: 2px solid rgba(255, 255, 255, 0.3);
         text-align: center;
-        animation: none; /* Disable animations in mobile menu */
+        animation: none;
+        /* Disable animations in mobile menu */
     }
 
     .header-main ul li a.resume-highlight::after {
-        display: none; /* Hide external arrow in mobile */
+        display: none;
+        /* Hide external arrow in mobile */
     }
 
     .header-main ul li a.resume-highlight::before {
-        display: none; /* Hide glow effect in mobile */
+        display: none;
+        /* Hide glow effect in mobile */
     }
 }
 
@@ -4996,4 +5017,370 @@ h6,
         padding: 8px 18px !important;
         font-size: 0.9rem !important;
     }
+}
+
+/* --- LEETCODE ACTIVITY SECTION --- */
+
+.leetcode-section {
+    padding: 6rem 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header-centered {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header-centered .section-title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.section-header-centered .section-subtitle {
+    color: #aaa;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.leetcode-consistency-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.leetcode-card.glass-effect {
+    width: 100%;
+    max-width: 1000px;
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.leetcode-card.glass-effect:hover {
+    background: rgba(255, 255, 255, 0.06);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(255, 82, 82, 0.1);
+}
+
+/* Subtle grid background */
+.leetcode-card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
+    background-size: 24px 24px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.leetcode-content {
+    position: relative;
+    z-index: 2;
+}
+
+.leetcode-header {
+    margin-bottom: 2.5rem;
+}
+
+.leetcode-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+}
+
+.leetcode-description {
+    color: #aaa;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.leetcode-heatmap-container {
+    width: 100%;
+    margin: 2rem 0;
+    border-radius: 16px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.leetcode-heatmap-container:hover {
+    border-color: rgba(255, 82, 82, 0.3);
+    box-shadow: 0 15px 40px rgba(255, 82, 82, 0.1);
+    transform: translateY(-2px);
+}
+
+.browser-top-bar {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    gap: 1.5rem;
+}
+
+.browser-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.browser-dots span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.browser-dots span:nth-child(1) {
+    background: #ff5f56;
+}
+
+.browser-dots span:nth-child(2) {
+    background: #ffbd2e;
+}
+
+.browser-dots span:nth-child(3) {
+    background: #27c93f;
+}
+
+.browser-address {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    color: #888;
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.heatmap-wrapper {
+    padding: 1.5rem;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.leetcode-heatmap-img {
+    min-width: 600px;
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+@media (max-width: 768px) {
+    .leetcode-heatmap-img {
+        min-width: 500px;
+    }
+
+    .browser-address {
+        display: none;
+    }
+}
+
+.leetcode-footer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.leetcode-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.7rem 1.6rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(5px);
+}
+
+.leetcode-btn:hover {
+    background: rgba(255, 82, 82, 0.1);
+    border-color: rgba(255, 82, 82, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 82, 82, 0.1);
+    color: white;
+}
+
+.leetcode-btn svg {
+    font-size: 1.2rem;
+    color: rgb(255, 82, 82);
+    transition: transform 0.3s ease;
+}
+
+.leetcode-btn:hover svg {
+    transform: scale(1.1);
+}
+
+/* --- GITHUB ACTIVITY SECTION --- */
+
+.github-section {
+    padding: 0 20px 8rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.github-main-card {
+    padding: 3rem;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.github-stats-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.github-stats-img,
+.github-langs-img {
+    height: 180px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.github-stats-img:hover,
+.github-langs-img:hover {
+    transform: scale(1.05);
+}
+
+.github-graph-container {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.github-activity-img {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+    min-width: 800px;
+}
+
+.graph-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.github-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+
+    .leetcode-section,
+    .github-section {
+        padding: 4rem 15px;
+    }
+
+    .leetcode-card.glass-effect,
+    .github-main-card {
+        padding: 1.5rem;
+    }
+
+    .leetcode-header h2,
+    .section-header-centered .section-title {
+        font-size: 2rem;
+    }
+
+    .leetcode-heatmap-img {
+        min-width: 450px;
+    }
+
+    .github-activity-img {
+        min-width: 500px;
+    }
+
+    .browser-address {
+        display: none;
+    }
+
+    .leetcode-footer,
+    .github-footer {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .leetcode-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 0.8rem 1rem;
+    }
+
+    .browser-top-bar {
+        padding: 8px 12px;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .leetcode-heatmap-img {
+        min-width: 400px;
+    }
+
+    .github-activity-img {
+        min-width: 450px;
+    }
+
+    .section-header-centered .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Custom Scrollbar for Graph Wrappers */
+.heatmap-wrapper::-webkit-scrollbar,
+.graph-wrapper::-webkit-scrollbar {
+    height: 6px;
+}
+
+.heatmap-wrapper::-webkit-scrollbar-track,
+.graph-wrapper::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.heatmap-wrapper::-webkit-scrollbar-thumb,
+.graph-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(255, 82, 82, 0.3);
+    border-radius: 10px;
 }

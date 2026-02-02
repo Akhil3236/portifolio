@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import { SiLeetcode, SiGithub } from 'react-icons/si';
 
 const skillsData = [
   {
@@ -58,13 +59,13 @@ function Skills() {
       <div className="skills-bg-glow"></div>
 
       <div className="skills-header animate-slide-up">
-
         <h1 className="skills-title">Technical <span className="highlight">Arsenal</span></h1>
         <p className="skills-subtitle">
           The languages, frameworks, and tools that power my development journey.
         </p>
       </div>
 
+     
       <div className="skills-grid">
         {skillsData.map((category, index) => (
           <div
@@ -96,6 +97,7 @@ function Skills() {
           </div>
         ))}
       </div>
+      
 
     </div>
   );
